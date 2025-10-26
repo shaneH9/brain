@@ -1,0 +1,31 @@
+# === Assignment 1: Two-Compartment & LIF notebooks ===
+# Tested on Ubuntu 22.04/24.04 with Python 3.10–3.12
+# Install with:  pip install -r requirements.txt
+
+# Core numeric + plotting
+numpy>=1.24
+matplotlib>=3.7
+scipy==1.13.*
+
+# Jupyter stack (choose either jupyterlab OR notebook; lab recommended)
+jupyterlab>=4.0
+ipykernel>=6.25
+ipywidgets>=8.1
+nbformat>=5.9
+nbclient>=0.9
+nbconvert>=7.10
+
+# Optional: if you prefer classic notebook UI, uncomment this:
+# notebook>=7.0
+
+# Optional dev utilities (only needed if you regenerate notebooks programmatically)
+# nbformat>=5.9
+# jupyter>=1.0
+
+# GIF support
+fastgif
+imageio>=2.34
+
+# Notes:
+# - We intentionally avoid heavy deps (torch/scipy) since the assignments only need NumPy & Matplotlib.
+# - All currents are in pA; voltages mV; conductances nS; capacitances pF; time ms.
